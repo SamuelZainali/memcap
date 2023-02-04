@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MEMCAP</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/output.css">
+  
+  <link rel="stylesheet" href="/test/assets/index-2abca931.css">
+</head>
+
+<body class="relative flex pt-6 flex-col justify-between">
+
+  <nav class="mx-3 py-3 sm:py-6 border-black relative flex items-center justify-between">
+    <div class="absolute top-0 h-1 my-2 w-full bg-black z-30"> </div>
+    <h1 class="logo text-5xl">MEMCAP</h1>
+    <div class="absolute bottom-0 h-1 my-2 w-full bg-black z-30"> </div>
+    <button id="h-menu-toggler" onclick="toggleHMenu()"
+      class="sm:hidden flex items-center duration-300 transition-all z-50 cursor-pointer text-6xl">
+      H
+    </button>
+    <div id="h-menu" class="open-h-menu">
+      <div onclick="toggleHMenu()" class="bg-black bg-opacity-70 w-1/4 h-full"></div>
+      <div id="h-menu-right" class="bg-white w-3/4 h-full">
+        <button onclick="openToggleButton()">
+          <h1>BUY</h1>
+          <h1>MORE</h1>
+          <h1>STUFF</h1>
+          <h1>NOW</h1>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <img width="600" height="400" id="desktop-img" class="absolute top-0 right-0 w-80 hidden lg:block"
+    src="/test/assets/desktop-img-bird-b2b6708c.webp" alt="bird">
+
+  <main class="px-3 sm:px-32 lg:px-20 pt-16 pb-8 relative">
+    <h1 class="font-light sm:w-1/3 w-3/4">
+      A way to capture memories - the light, medium and <span class="bg-primary">dark ones.</span>
+    </h1>
+    <img id="tablet-img" class="absolute top-0 right-0 mr-32 lg:hidden sm:block hidden"
+      src="/test/assets/tablet-img-parrot-868382e8.webp" alt="parrot">
+  </main>
+
+  <section class="flex w-full lg:flex-row flex-col">
+    <div class="text-box lg:pl-20 sm:pr-32 px-6 justify-end py-16 lg:py-0">
+      <p>
+        Monocle ipsum dolor sit amet finest global charming sleepy elegant eclectic, smart bulletin. Delightful
+        the highest quality liveable, cutting-edge exclusive espresso charming hand-crafted Shinkansen.
+      </p>
+    </div>
+    <div class="text-box px-3 sm:pl-32 lg:px-20 py-12 lg:py-0">
+      <p>
+        Concierge cutting-edge extraordinary soft power, delightful bureaux Helsinki premium. Beams Baggu
+        bespoke smart Shinkansen ANA hub extraordinary Scandinavian exquisite uniforms Lufthansa Ginza.
+      </p>
+    </div>
+    <div class="relative text-box lg:pr-20 sm:px-32 px-6 justify-end sm:justify-center py-8 lg:py-0">
+      <img id="mobile-img" class="sm:hidden absolute top-0 -translate-y-full right-0"
+        src="/test/assets/mobile-img-flowers-6e4d2509.webp" alt="flowers">
+      <p>
+        <span class="lg:text-secondary-1 lg:font-semibold">
+          Comme des Garçons <br class="hidden lg:block">
+        </span>
+        ryokan lovely Melbourne Helsinki destination Lufthansa Fast Lane sophisticated Porter
+        artisanal Ettinger remarkable Asia-Pacific hub.
+      </p>
+      <div class="lg:block hidden h-2 min-w-full bg-secondary-2 my-2">
+      </div>
+    </div>
+  </section>
+
+  <section class="px-20 lg:py-10 pt-8 pb-16 lg:w-1/3 lg:flex justify-center lg:justify-end hidden">
+    <button onclick="openToggleButton()" class="primary-btn">BUY</button>
+  </section>
+
+  <section id="cookies-modal"
+    class="fixed bg-black bg-opacity-70 w-screen h-screen top-0 z-50 justify-center items-center hidden transition-all duration-1000">
+    <main class="bg-white w-3/4 sm:w-3/5 lg:w-1/3 p-4 rounded-2xl">
+      <button onclick="rejectCookies()" class="tertiary-btn">
+        Reject
+      </button>
+      <p class="p-8">Cookies and other Identifiers consist of portions of code installed in the browser that
+        assist the Owner
+        in providing the Service according to the purposes described. Some of the purposes for which Cookies are
+        installed may also require the User's consent.</p>
+      <button onclick="acceptCookies()" class="secondary-btn float-right w-auto">
+        Accept
+      </button>
+    </main>
+  </section>
+
+  <footer class="bg-black px-20 py-8 mt-16 ">
+    <label class="text-primary py-2 text-lg leading-4 lg:text-left">
+      NEWSLETTER
+    </label>
+    <form class="my-2 flex">
+      <input
+        class="px-3 py-1 rounded-2xl placeholder:text-black placeholder:text-opacity-75 outline-none border-none text-lg"
+        placeholder="hello@example.com" type="email">
+      <button class="secondary-btn mx-2 ">
+        SIGN UP
+      </button>
+    </form>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
