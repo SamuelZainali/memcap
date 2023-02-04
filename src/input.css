@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Kyiv Type Sans";
+  }
+  h1 {
+    font-family: "Kyiv Type Serif";
+  }
+}
+
+@layer components {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+  h1 {
+    @apply text-5xl leading-tight;
+  }
+  h2 {
+    @apply text-3xl leading-8;
+  }
+  h3 {
+    @apply text-2xl leading-6;
+  }
+  h4 {
+    @apply text-xl leading-5;
+  }
+  h5 {
+    @apply text-lg leading-4;
+  }
+  h6 {
+    @apply text-base leading-3;
+  }
+
+  button {
+    @apply transition-all ease-in duration-200;
+  }
+  .secondary-btn,
+  .tertiary-btn {
+    @apply rounded-2xl px-3 py-1 text-lg hover:rounded-3xl tracking-widest;
+  }
+
+  #h-menu {
+    @apply transition-all duration-300 ease-in fixed top-0 h-screen w-screen -right-full z-40 flex sm:hidden;
+  }
+
+  #h-menu-right {
+    @apply flex flex-col h-full items-center justify-center cursor-pointer;
+  }
+  #h-menu-right h1 {
+    @apply py-10 font-black text-6xl;
+  }
+
+  .text-box {
+    @apply px-16 text-xl lg:text-base lg:w-1/3 w-full flex lg:block;
+  }
+  .text-box p {
+    @apply w-3/4 sm:w-1/2 lg:w-full;
+  }
+  .primary-btn {
+    @apply bg-black text-primary font-bold text-4xl px-6 py-1  border-black border-4 hover:border-r-primary hover:border-b-primary hover:rounded-sm;
+  }
+  .secondary-btn {
+    @apply text-primary bg-secondary-2;
+  }
+  .tertiary-btn {
+    @apply bg-tertiary-1 text-white;
+  }
+}
