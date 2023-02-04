@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-display: optional;
+}
+
+/* KYIV TYPE SERIF */
+@font-face {
+  font-family: "Kyiv Type Serif";
+  src: url("./assets/fonts/KyivTypeSerif-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* KYIV TYPE Sans */
+@font-face {
+  font-family: "Kyiv Type Sans";
+  src: url("./assets/fonts/KyivTypeSans-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* KYIV TYPE Sans Heavy */
+@font-face {
+  font-family: "Kyiv Type Sans Heavy";
+  src: url("./assets/fonts/KyivTypeSans-Heavy.otf");
+  font-weight: black;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+}
+
+@media only screen and (min-width: 640px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+#desktop-img {
+  width: 28rem;
+}
+
+#tablet-img {
+  width: 20rem;
+}
+
+#mobile-img {
+  width: 25%;
+}
+
+#h-menu-right h1,
+#h-menu-toggler,
+nav h1 {
+  font-family: "Kyiv Type Sans Heavy";
+}
