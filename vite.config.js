@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
 
 export default {
-  base: "/test/",
+  base: "/memcap/",
 };
